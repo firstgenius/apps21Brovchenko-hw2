@@ -63,7 +63,7 @@ public final class ImmutableLinkedList implements ImmutableList {
 
     @Override
     public ImmutableList addAll(int index, Object[] c) {
-        if ((index > (size() + c.length)) || c == null) {
+        if (index > size() + c.length) {
             throw new IllegalArgumentException();
         }
 
