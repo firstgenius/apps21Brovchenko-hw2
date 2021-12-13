@@ -111,7 +111,7 @@ public final class ImmutableArrayList implements ImmutableList {
 
 
     @Override
-    public int size() { return arrayList.length;}
+    public int size() { return arrayList.length; }
 
 
     @Override
