@@ -167,7 +167,9 @@ public final class ImmutableLinkedList implements ImmutableList {
     }
 
     @Override
-    public ImmutableList clear() { return new ImmutableLinkedList(new Object[size()]); }
+    public ImmutableList clear() { 
+        return new ImmutableLinkedList(new Object[size()]);
+    }
 
     @Override
     public boolean isEmpty() {
