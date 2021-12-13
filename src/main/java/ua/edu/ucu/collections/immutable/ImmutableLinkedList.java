@@ -98,7 +98,7 @@ public final class ImmutableLinkedList implements ImmutableList {
 
         Node curNode = head;
         int counter = 0;
-        while (counter <= index){
+        while (counter <= index) {
             curNode = curNode.getNext();
             counter++;
         }
@@ -115,7 +115,7 @@ public final class ImmutableLinkedList implements ImmutableList {
         Object[] newList = new Object[size() - 1];
         int counter = 0;
 
-        while (counter < index){
+        while (counter < index) {
             newList[counter] = curNode.getValue();
             curNode = curNode.getNext();
             counter++;
