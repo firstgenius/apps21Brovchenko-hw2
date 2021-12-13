@@ -27,7 +27,9 @@ public final class ImmutableArrayList implements ImmutableList {
 
 
     @Override
-    public ImmutableList add(int index, Object e) { return addAll(index, new Object[] {e}); }
+    public ImmutableList add(int index, Object e) { 
+        return addAll(index, new Object[] {e});
+    }
 
 
     @Override
@@ -115,7 +117,9 @@ public final class ImmutableArrayList implements ImmutableList {
 
 
     @Override
-    public ImmutableList clear() { return new ImmutableArrayList(new Object[size()]); }
+    public ImmutableList clear() { 
+        return new ImmutableArrayList(new Object[size()]);
+    }
 
 
     @Override
