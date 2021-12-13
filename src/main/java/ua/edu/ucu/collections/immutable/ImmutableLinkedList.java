@@ -34,7 +34,9 @@ public final class ImmutableLinkedList implements ImmutableList {
     }
 
     @Override
-    public ImmutableList add(Object e) { return addAll(size(), new Object[]{e}); }
+    public ImmutableList add(Object e) { 
+        return addAll(size(), new Object[]{e});
+    }
 
     @Override
     public ImmutableList add(int index, Object e) {
